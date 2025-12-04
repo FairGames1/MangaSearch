@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- App theme -->
+    <style name="Theme.MangaSearch" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color -->
+        <item name="colorPrimary">@color/ms_primary</item>
+        <item name="colorPrimaryVariant">@color/ms_primary_variant</item>
+        <item name="colorOnPrimary">@color/ms_on_primary</item>
+
+        <!-- Secondary / accent -->
+        <item name="colorSecondary">@color/ms_secondary</item>
+        <item name="colorSecondaryVariant">@color/ms_secondary_variant</item>
+        <item name="colorOnSecondary">@color/ms_on_secondary</item>
+
+        <!-- Background / surfaces -->
+        <item name="android:colorBackground">@color/ms_background</item>
+        <item name="colorSurface">@color/ms_surface</item>
+        <item name="colorOnSurface">@color/ms_on_surface</item>
+
+        <!-- Status bar / nav bar can stay default -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+    </style>
+
+</resources>

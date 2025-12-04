@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.mangasearch.ui.home.HomeFragment"
+        android:label="Home">
+        <action
+            android:id="@+id/action_home_to_searchResults"
+            app:destination="@id/searchResultsFragment" />
+        <action
+            android:id="@+id/action_home_to_mangaDetail"
+            app:destination="@id/mangaDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/favoritesFragment"
+        android:name="com.example.mangasearch.ui.favorites.FavoritesFragment"
+        android:label="Favorites" />
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.mangasearch.ui.profile.ProfileFragment"
+        android:label="Profile" />
+
+    <fragment
+        android:id="@+id/searchResultsFragment"
+        android:name="com.example.mangasearch.ui.search.SearchResultsFragment"
+        android:label="Search">
+        <action
+            android:id="@+id/action_search_to_mangaDetail"
+            app:destination="@id/mangaDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/mangaDetailFragment"
+        android:name="com.example.mangasearch.ui.detail.MangaDetailFragment"
+        android:label="Details">
+        <action
+            android:id="@+id/action_detail_to_chapterList"
+            app:destination="@id/chapterListFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/chapterListFragment"
+        android:name="com.example.mangasearch.ui.chapters.ChapterListFragment"
+        android:label="Chapters">
+        <action
+            android:id="@+id/action_chapters_to_reader"
+            app:destination="@id/readerFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/readerFragment"
+        android:name="com.example.mangasearch.ui.reader.ReaderFragment"
+        android:label="Reader" />
+</navigation>

@@ -1,0 +1,46 @@
+[
+    {
+        "merged": "com.example.mangasearch.app-mergeDebugResources-67:/layout/fragment_chapter_list.xml",
+        "source": "com.example.mangasearch.app-main-70:/layout/fragment_chapter_list.xml"
+    },
+    {
+        "merged": "com.example.mangasearch.app-mergeDebugResources-67:/layout/fragment_reader.xml",
+        "source": "com.example.mangasearch.app-main-70:/layout/fragment_reader.xml"
+    },
+    {
+        "merged": "com.example.mangasearch.app-mergeDebugResources-67:/layout/fragment_favorites.xml",
+        "source": "com.example.mangasearch.app-main-70:/layout/fragment_favorites.xml"
+    },
+    {
+        "merged": "com.example.mangasearch.app-mergeDebugResources-67:/layout/fragment_profile.xml",
+        "source": "com.example.mangasearch.app-main-70:/layout/fragment_profile.xml"
+    },
+    {
+        "merged": "com.example.mangasearch.app-mergeDebugResources-67:/layout/item_page.xml",
+        "source": "com.example.mangasearch.app-main-70:/layout/item_page.xml"
+    },
+    {
+        "merged": "com.example.mangasearch.app-mergeDebugResources-67:/layout/activity_main.xml",
+        "source": "com.example.mangasearch.app-main-70:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.mangasearch.app-mergeDebugResources-67:/layout/item_manga.xml",
+        "source": "com.example.mangasearch.app-main-70:/layout/item_manga.xml"
+    },
+    {
+        "merged": "com.example.mangasearch.app-mergeDebugResources-67:/layout/fragment_manga_detail.xml",
+        "source": "com.example.mangasearch.app-main-70:/layout/fragment_manga_detail.xml"
+    },
+    {
+        "merged": "com.example.mangasearch.app-mergeDebugResources-67:/layout/fragment_home.xml",
+        "source": "com.example.mangasearch.app-main-70:/layout/fragment_home.xml"
+    },
+    {
+        "merged": "com.example.mangasearch.app-mergeDebugResources-67:/layout/fragment_search_results.xml",
+        "source": "com.example.mangasearch.app-main-70:/layout/fragment_search_results.xml"
+    },
+    {
+        "merged": "com.example.mangasearch.app-mergeDebugResources-67:/layout/item_chapter.xml",
+        "source": "com.example.mangasearch.app-main-70:/layout/item_chapter.xml"
+    }
+]

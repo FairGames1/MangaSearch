@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ms_background">#FF121212</color>
+    <color name="ms_on_primary">#FF000000</color>
+    <color name="ms_on_secondary">#FF000000</color>
+    <color name="ms_on_surface">#FFFFFFFF</color>
+    <color name="ms_primary">#FFBB86FC</color>
+    <color name="ms_primary_variant">#FF3700B3</color>
+    <color name="ms_secondary">#FF03DAC6</color>
+    <color name="ms_secondary_variant">#FF03DAC6</color>
+    <color name="ms_surface">#FF1E1E1E</color>
+    <string name="app_name">MangaSearch</string>
+    <string name="nav_favorites">Favorites</string>
+    <string name="nav_home">Home</string>
+    <string name="nav_profile">Profile</string>
+    <style name="Theme.MangaSearch" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/ms_primary</item>
+        <item name="colorPrimaryVariant">@color/ms_primary_variant</item>
+        <item name="colorOnPrimary">@color/ms_on_primary</item>
+
+        <item name="colorSecondary">@color/ms_secondary</item>
+        <item name="colorSecondaryVariant">@color/ms_secondary_variant</item>
+        <item name="colorOnSecondary">@color/ms_on_secondary</item>
+
+        <item name="android:colorBackground">@color/ms_background</item>
+        <item name="colorSurface">@color/ms_surface</item>
+        <item name="colorOnSurface">@color/ms_on_surface</item>
+
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+    </style>
+</resources>
