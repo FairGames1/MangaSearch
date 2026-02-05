@@ -2,5 +2,5 @@
     <string name="app_name">MangaSearch</string>
     <string name="nav_home">Home</string>
     <string name="nav_favorites">Favorites</string>
-    <string name="nav_profile">Profile</string>
+    <string name="nav_settings">Settings</string>
 </resources>

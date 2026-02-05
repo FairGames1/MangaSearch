@@ -22,9 +22,9 @@
         android:label="Favorites" />
 
     <fragment
-        android:id="@+id/profileFragment"
-        android:name="com.example.mangasearch.ui.profile.ProfileFragment"
-        android:label="Profile" />
+        android:id="@+id/settingsFragment"
+        android:name="com.example.mangasearch.ui.settings.SettingsFragment"
+        android:label="Settings" />
 
     <fragment
         android:id="@+id/searchResultsFragment"

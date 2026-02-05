@@ -12,7 +12,7 @@ interface MangaDexService {
     suspend fun searchManga(
         @Query("title") title: String,
         @Query("limit") limit: Int = 20,
-        @Query("contentRating[]") contentRating: List<String> = listOf("safe", "suggestive"),
+        @Query("contentRating[]") contentRating: List<String>,
         @Query("includes[]") includes: List<String> = listOf("cover_art", "author")
     ): MangaListResponse
 
@@ -21,7 +21,7 @@ interface MangaDexService {
         @Query("limit") limit: Int = 20,
         @QueryMap order: Map<String, String> = mapOf("order[followedCount]" to "desc"),
         @Query("includes[]") includes: List<String> = listOf("cover_art", "author"),
-        @Query("contentRating[]") contentRating: List<String> = listOf("safe", "suggestive")
+        @Query("contentRating[]") contentRating: List<String>
     ): MangaListResponse
 
     @GET("chapter")
@@ -30,7 +30,7 @@ interface MangaDexService {
         @Query("translatedLanguage[]") language: String = "en",
         @Query("order[chapter]") orderChapter: String = "asc",
         @Query("limit") limit: Int = 50,
-        @Query("contentRating[]") contentRating: List<String> = listOf("safe", "suggestive")
+        @Query("contentRating[]") contentRating: List<String>
     ): ChapterListResponse
 
     @GET("at-home/server/{chapterId}")

@@ -2,5 +2,8 @@
     <string name="app_name">MangaSearch</string>
     <string name="nav_home">Home</string>
     <string name="nav_favorites">Favorites</string>
-    <string name="nav_profile">Profile</string>
+    <string name="nav_settings">Settings</string>
+    <string name="dark_mode">Dark mode</string>
+    <string name="settings">Settings</string>
+    <string name="nsfw_filter_hide_erotica">NSFW filter (hide erotica)</string>
 </resources>

@@ -1,26 +1,43 @@
 package com.example.mangasearch.data.repository
 
+import android.content.Context
 import com.example.mangasearch.data.api.ApiClient
 import com.example.mangasearch.data.api.MangaDexService
+import com.example.mangasearch.data.local.SettingsManager
 import com.example.mangasearch.data.model.*
 
-class MangaRepository {
+class MangaRepository(private val context: Context) {
 
     private val service: MangaDexService =
         ApiClient.retrofit.create(MangaDexService::class.java)
 
+    private fun contentRatings(): List<String> {
+        return if (SettingsManager.isSafeMode(context)) {
+            listOf("safe", "suggestive")
+        } else {
+            listOf("safe", "suggestive", "erotica", "pornographic")
+        }
+    }
+
     suspend fun getPopularManga(): List<MangaUi> {
-        val response = service.getPopularManga()
+        val response = service.getPopularManga(contentRating = contentRatings())
         return response.data.map { it.toMangaUi() }
     }
 
     suspend fun searchManga(title: String): List<MangaUi> {
-        val response = service.searchManga(title)
+        val response = service.searchManga(
+            title = title,
+            contentRating = contentRatings()
+        )
         return response.data.map { it.toMangaUi() }
     }
 
-    suspend fun getChapters(mangaId: String): List<ChapterUi> {
-        val response = service.getChapters(mangaId)
+    suspend fun getChapters(mangaId: String, language: String = "en"): List<ChapterUi> {
+        val response = service.getChapters(
+            mangaId = mangaId,
+            language = language,
+            contentRating = contentRatings()
+        )
         return response.data.map {
             ChapterUi(
                 id = it.id,

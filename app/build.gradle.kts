@@ -73,4 +73,5 @@ dependencies {
     implementation(libs.converter.gson)
     implementation("io.coil-kt:coil:2.7.0")
     implementation("androidx.fragment:fragment-ktx:1.8.9")
+    implementation("com.google.code.gson:gson:2.13.2")
 }
