@@ -19,7 +19,6 @@ object FavoritesManager {
 
     fun addFavorite(context: Context, manga: MangaUi) {
         val favorites = loadFavorites(context)
-        // remove any existing with same id, then add
         val filtered = favorites.filterNot { it.id == manga.id }.toMutableList()
         filtered.add(manga)
         saveFavorites(context, filtered)
@@ -82,7 +81,6 @@ object FavoritesManager {
                 }
             }
         } catch (e: Exception) {
-            // if something is corrupted, just return empty list instead of crashing
             e.printStackTrace()
             return mutableListOf()
         }

@@ -32,6 +32,6 @@ data class Relationship(
 )
 
 data class RelationshipAttributes(
-    val fileName: String? = null,     // for cover_art
-    val name: String? = null          // for author
+    val fileName: String? = null,
+    val name: String? = null
 )

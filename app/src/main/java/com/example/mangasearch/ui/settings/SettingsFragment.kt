@@ -45,7 +45,6 @@ class SettingsFragment : Fragment() {
                 else AppCompatDelegate.MODE_NIGHT_NO
             )
 
-            // optional: see section 2 about blink
             requireActivity().recreate()
         }
 
@@ -54,8 +53,6 @@ class SettingsFragment : Fragment() {
 
             SettingsManager.setSafeMode(requireContext(), isChecked)
 
-            // no recreate needed for this setting
-            // you can just inform user: "Restart search / reload list"
         }
     }
 

@@ -20,7 +20,7 @@ object SettingsManager {
 
     fun isDarkModeEnabled(context: Context): Boolean {
         return context.getSharedPreferences(PREFS, Context.MODE_PRIVATE)
-            .getBoolean(KEY_DARK_MODE, true) // default: dark
+            .getBoolean(KEY_DARK_MODE, true)
     }
 
     fun setDarkModeEnabled(context: Context, enabled: Boolean) {
